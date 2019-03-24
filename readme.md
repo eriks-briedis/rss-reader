@@ -8,10 +8,11 @@ Simple app to consume rss feed and display the most frequent words
  
 ### Installation
 - Clone this repository ``git clone https://github.com/eriks-briedis/rss-reader.git rss-reader``
+- ``cd rss-reader``
 - Run ``vagrant up``
-- Once Vagrant box is installed login with SSH ``vagrant ssh``
 - Copy .env.example and rename it to .env
-- Go to ``cd /var/www/rss-reader``
+- Once Vagrant box is installed login with SSH ``vagrant ssh``
+- ``cd /var/www/rss-reader``
 - Run ``composer install`` to install php dependencies
 - Run db migrations ``php artisan migrate`` to create required tables
 - Add ``192.168.10.10 rss-reader.local`` to your hosts file
